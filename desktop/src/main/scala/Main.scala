@@ -1,6 +1,7 @@
 package com.jbouffard.bludbourne
 
 import com.badlogic.gdx.backends.lwjgl._
+import com.badlogic.gdx.{Appliation, GDX}
 
 object Main extends App {
     val cfg = new LwjglApplicationConfiguration
@@ -8,5 +9,6 @@ object Main extends App {
     cfg.height = 480
     cfg.width = 800
     cfg.forceExit = false
-    new LwjglApplication(new Bludbourne, cfg)
+    val app: Application = new LwjglApplication(new Bludbourne, cfg)
+    app
 }
