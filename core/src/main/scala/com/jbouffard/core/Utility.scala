@@ -8,9 +8,9 @@ import com.badlogic.gdx.maps.tiled.{TiledMap, TmxMapLoader}
 import com.badlogic.gdx.assets.AssetManager
 
 
-class Utility {
+object Utility {
   final val assetManager: AssetManager = new AssetManager()
-  final val TAG: String = classOf[Utility].getName()
+  final val TAG: String = "Utility"
   val pathResolver: InternalFileHandleResolver = new InternalFileHandleResolver()
 
   def unloadAsset(assetPath: String): Unit =
